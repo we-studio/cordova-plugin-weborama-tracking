@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="cordova-plugin-weborama-tracking"
+    version="0.1.0">
+    
+    <name>cordova-plugin-weborama-tracking</name>
+
+    <author>Westudio</author>
+
+    <description>Weborama tracking cordova plugin</description>
+
+    <keywords>wemanity,westudio,westud.io,cordova,weborama,plugin</keywords>
+
+    <license>MIT</license>
+    
+    <js-module src="www/WeboramaTrackingPlugin.js" name="WeboramaTrackingPlugin">
+        <clobbers target="window.WeboramaTrackingPlugin" />
+    </js-module>
+
+    <config-gile target="config.xml" parent="/*">
+        <feature name="WeboramaPlugin">
+            <param name="ios-package" value="WeboramaPlugin" />
+        </feature>
+    </config-gile>
+    
+    <platform name="ios">
+        <header-file src="src/ios/WeboramaPlugin.h" />
+        <source-file src="src/ios/WeboramaPlugin.m" />
+        
+        <header-file src="src/ios/sdk/WeboramaTrackingPlugin.h" />
+        <source-file src="src/ios/sdk/libWeboramaTrackingPlugin.a" framework="true" />
+        
+        <framework src="AdSupport.framework" />
+        <framework src="SystemConfiguration.framework" />
+    </platform>
+    
+</plugin>
