@@ -34,5 +34,15 @@
         <framework src="AdSupport.framework" />
         <framework src="SystemConfiguration.framework" />
     </platform>
-    
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WeboramaPlugin">
+                <param name="android-package" value="io.westud.cordova.WeboramaPlugin.WeboramaPlugin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/libs/weboramatrackingplugin.jar" target-dir="libs" />
+        <source-file src="src/android/WeboramaPlugin.java" target-dir="src/io/westud/cordova/WeboramaPlugin" />
+    </platform>
+
 </plugin>
