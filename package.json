@@ -1,0 +1,28 @@
+{
+  "name": "cordova-plugin-weborama-tracking",
+  "version": "0.1.0",
+  "description": "Weborama tracking cordova plugin",
+  "cordova": {
+    "id": "cordova-plugin-weborama-tracking",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-studio/cordova-plugin-weborama-tracking.git"
+  },
+  "keywords": [
+    "cordova",
+    "weborama",
+    "tracking",
+    "ecosystem:cordova",
+    "cordova-ios"
+  ],
+  "author": "Westudio",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/we-studio/cordova-plugin-weborama-tracking/issues"
+  },
+  "homepage": "https://github.com/we-studio/cordova-plugin-weborama-tracking#readme"
+}
