@@ -5,7 +5,8 @@
   "cordova": {
     "id": "cordova-plugin-weborama-tracking",
     "platforms": [
-      "ios"
+      "ios",
+      "android"
     ]
   },
   "repository": {
@@ -17,7 +18,8 @@
     "weborama",
     "tracking",
     "ecosystem:cordova",
-    "cordova-ios"
+    "cordova-ios",
+    "cordova-android"
   ],
   "author": "Westudio",
   "license": "MIT",
