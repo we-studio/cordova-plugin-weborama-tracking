@@ -29,6 +29,7 @@ WeboramaTrackingPlugin.repeatableConversionPing(options);
 ## TODO ##
 - [x] iOS support
 - [ ] Android support
+- [ ] available in Cordova plugins list
 
 
 ## Credits ##
