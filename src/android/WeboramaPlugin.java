@@ -103,23 +103,23 @@ public class WeboramaPlugin extends CordovaPlugin {
         int zoneId = object.getInt("zoneId");
         String host = object.getString("host");
 
-        WeboramaTrackingPlugin = new WeboramaTrackingPlugin(this, siteId, zoneId, host);
+        WeboramaTrackingPlugin = new WeboramaTrackingPlugin(this.webView.getContext(), siteId, zoneId, host);
 
-        String customPath = object.getString("customPath");
 
-        JSONObject customParameters = object.getJSONObject("customParameters");
 
-        boolean useIpTracking = object.getBoolean("useIpTracking");
+      //  JSONObject customParameters = object.getJSONObject("customParameters");
+
 
         /** generic parameters */
-        if (object.has(customPath)) {
+        if (object.has("customPath")) {
+            String customPath = object.getString("customPath");
             wboTracker.customPath = customPath;
         }
-        if (object.has(customParameters)) {
-            wboTracker.customParameters = customParameters;
-        }
-        if (object.has(useIpTracking)) {
-            wboTracker.useIpTracking = true;
+//        if (object.has(customParameters)) {
+//            wboTracker.customParameters = customParameters;
+//        }
+        if (object.has("useIpTracking")) {
+            wboTracker.useIpTracking = object.getBoolean("useIpTracking");
         }
 
         return wboTracker;
