@@ -1,5 +1,7 @@
 package io.westud.cordova.WeboramaPlugin;
 
+import com.weborama.tracking.WeboramaTrackingPlugin;
+
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
@@ -103,7 +105,7 @@ public class WeboramaPlugin extends CordovaPlugin {
         int zoneId = object.getInt("zoneId");
         String host = object.getString("host");
 
-        WeboramaTrackingPlugin = new WeboramaTrackingPlugin(this.webView.getContext(), siteId, zoneId, host);
+        WeboramaTrackingPlugin wboTracker = new WeboramaTrackingPlugin(this.webView.getContext(), siteId, zoneId, host);
 
 
 
