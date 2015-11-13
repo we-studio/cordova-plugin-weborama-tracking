@@ -6,7 +6,7 @@ Cordova plugin for [Weborama tracking](http://www.weborama.com).
 
 Add the following plugin to your Cordova/Ionic project:
 
-    cordova plugin add https://github.com/we-studio/cordova-plugin-weborama-tracking.git
+    cordova plugin add cordova-plugin-weborama-tracking
 
   
 ## Usage
@@ -25,12 +25,6 @@ WeboramaTrackingPlugin.trackerPingUnique(options);
 WeboramaTrackingPlugin.conversionPing(options);
 WeboramaTrackingPlugin.repeatableConversionPing(options);
 ```
-
-## TODO ##
-- [x] iOS support
-- [x] Android support
-- [ ] available in Cordova plugins list
-
 
 ## Credits ##
 
